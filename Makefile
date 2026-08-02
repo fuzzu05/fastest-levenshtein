@@ -10,7 +10,7 @@ build:
 test: build
 	npm install --ignore-scripts
 	cp tests/original/test.ts .
-	-npx tsc test.ts --esModuleInterop --skipLibCheck
+	-npx tsc test.ts --esModuleInterop --skipLibCheck --module commonjs
 	npx jest test.js
 	rm test.ts test.js
 
@@ -18,6 +18,6 @@ test: build
 bench: build
 	npm install --ignore-scripts
 	cp tests/original/bench.ts .
-	-npx tsc bench.ts --esModuleInterop --skipLibCheck
+	-npx tsc bench.ts --esModuleInterop --skipLibCheck --module commonjs
 	node bench.js
 	rm bench.ts bench.js
