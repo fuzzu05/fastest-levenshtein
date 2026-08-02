@@ -3,3 +3,8 @@ node_modules/
 wasm_exec.js
 coverage/
 data.json
+test.ts
+test.js
+bench.ts
+bench.js
+package-lock.json
