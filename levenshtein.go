@@ -243,16 +243,3 @@ func Closest(str string, arr []string) string {
 
 	return arr[minIndex]
 }
-
-func main() {
-	println("Distance:", Distance("kitten", "sitting"))
-
-	words := []string{
-		"apple",
-		"application",
-		"pineapple",
-		"apply",
-	}
-
-	println("Closest:", Closest("aple", words))
-}
