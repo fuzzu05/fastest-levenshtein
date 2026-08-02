@@ -1,0 +1,5 @@
+node_modules/
+*.wasm
+wasm_exec.js
+coverage/
+data.json
