@@ -3,7 +3,7 @@ all: build
 
 # Build the WebAssembly binary and copy the required runtime
 build:
-	cp "$$(go env GOROOT)/misc/wasm/wasm_exec.js" . || cp "$$(go env GOROOT)/lib/wasm/wasm_exec.js" .
+	cp "$$(go env GOROOT)/lib/wasm/wasm_exec.js" .
 	GOOS=js GOARCH=wasm go build -o fastest-levenshtein.wasm main.go levenshtein.go
 
 # Run the original hashed tests against our new Wasm port
